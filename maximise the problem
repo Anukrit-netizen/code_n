@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,k;
+    cin>>n>>k;
+    int arr[n];
+    for(int i=1; i<=n; i++)
+    {
+        arr[i] = 5*i;
+    }
+    int sum = 0;
+    int count =0;
+    for(int i=1; i<=n; i++)
+    {
+        sum = sum + arr[i];
+        if(sum <= 240-k)
+        {
+            count++;
+        }
+        else if (sum > 240-k)
+        {
+            break;
+        }
+    }
+    cout<<count<<"\n";
+}
