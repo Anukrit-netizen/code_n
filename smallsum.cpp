@@ -1,3 +1,6 @@
+//small sum nlogn approach 
+//check for duplicate approach
+
 #include <bits/stdc++.h>
   using namespace std;
   int findDuplicate(int arr[], int n, int k)
